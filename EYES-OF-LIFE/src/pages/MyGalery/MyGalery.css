@@ -1,9 +1,20 @@
 .title {
-    text-align: center;
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
-  }
-
-.button{
-  margin-left: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
-  
+
+
+.title p {
+  margin-right: 10px; /* Ajusta el margen entre las etiquetas y los campos de entrada */
+}
+
+
+.title label {
+  margin-bottom: 10px; /* Ajusta el espacio entre las etiquetas y los campos de entrada */
+}
+
+.title input {
+  margin-right: 10px; /* Ajusta el espacio entre los campos de entrada */
+}
+

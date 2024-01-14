@@ -38,7 +38,11 @@ body {
   font-size: 18px;
 }
 
-.form-group-calendar{
+<<<<<<< HEAD
+.form-group-calendar .react-calendar {
+=======
+.form-group-calendar {
+>>>>>>> 06b814e323662f70656a38b3ad4970829b3fcfcf
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,7 +75,12 @@ button:hover {
 
 .form-group {
   width: 100%;
-  margin-top:-25px;
+  margin-top: 25px;
+<<<<<<< HEAD
+  
+=======
+
+>>>>>>> 06b814e323662f70656a38b3ad4970829b3fcfcf
 }
 
 .citas-reservadas {

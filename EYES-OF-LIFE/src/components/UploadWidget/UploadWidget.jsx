@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react"
 import { addImagenPhotographer } from '../../services/photographer'
+import './UploadWidget.css'
     
  function UploadWidget({dataImagen}) {
 
@@ -20,8 +21,8 @@ import { addImagenPhotographer } from '../../services/photographer'
         })
     },[dataImagen])
     return (
-        <button onClick={ () => widgetRef.current.open()}>
-            Upload
+        <button className= "button" onClick={ () => widgetRef.current.open()}>
+            Subir
         </button>
     )
 

@@ -14,7 +14,7 @@
 .app-logo {
   max-width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
   height: auto;
-  margin-right: 800px; /* Añade un margen derecho para separar el logo de los demás elementos */
+  margin-right: 100px; /* Añade un margen derecho para separar el logo de los demás elementos */
 }
 
 .button-container {
@@ -25,6 +25,7 @@
 .app-button {
   padding: 10px 15px;
   font-size: 14px;
+  background-color: rgb(248, 186, 0);
 }
 
 /* Media Queries para pantallas más pequeñas (ajusta según tus necesidades) */

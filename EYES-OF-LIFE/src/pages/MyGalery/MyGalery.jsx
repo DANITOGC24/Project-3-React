@@ -9,10 +9,12 @@ const MyGalery = () => {
   const [photosGaleryPhotographer, setPhotosGaleryPhotographer] = useState([]);
   const [title, setTitle] = useState('')
   const [description, setDescription] = useState('')
+  const[url, setUrl] = useState('')
 
   const imagenData = {
     title_image: title,
     description: description,
+    url: url,
     galeryId: 3
   }
 
@@ -28,21 +30,23 @@ const MyGalery = () => {
     };
     fetchPhotosGaleryPhotographer();
   }, []);
-  console.log(photosGaleryPhotographer);
+  //console.log(photosGaleryPhotographer);
   // console.log(title)
   // console.log(description)
   return (
-    <>
-      <div className='title'>MyGalery</div>
-      Título
-      <label>
-         <input type='text' onChange={(e)=> setTitle(e.target.value)} />
-      </label>
-      Description
-      <label>
-        <input type='text' onChange={(e)=> setDescription(e.target.value)} />
-      </label>
-      <UploadWidget dataImagen = {imagenData}/>
+    <> 
+    <h2>MyGalery</h2>
+      <div className='title'>
+        <p>Título</p>
+        <label>
+          <input type='text' onChange={(e)=> setTitle(e.target.value)} />
+        </label>
+        <p>Description</p>
+        <label>
+          <input type='text' onChange={(e)=> setDescription(e.target.value)} />
+        </label>
+      <UploadWidget dataImagen = {imagenData}/> 
+      </div>
      <ListPhotosGalery photosGalery={photosGaleryPhotographer.message} /> 
     </>
   );

@@ -63,15 +63,10 @@ body, html {
 /* Estilos de las imágenes en las columnas */
 .column img {
   width: calc(33.333% - 10px); /* Para que haya 3 imágenes por fila */
-  height: 150px;
+  height: 270px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
 }
 
-/* Estilos responsivos */
-@media (min-width: 768px) {
-  .welcome-container {
-    font-size: 2.5rem;
-  }
-}
+
