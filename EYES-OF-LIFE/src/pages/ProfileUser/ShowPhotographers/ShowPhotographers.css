@@ -3,3 +3,27 @@
     content:  wrap;
 
 }
+
+.button-PhotoGrapher{
+    background-color: rgb(216, 183, 49);
+    font-size: 16px;
+    color: black
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; 
+  }
+
+.searchBar{
+   margin-top: 50px;
+   margin-bottom: -50px;
+}
+
+.space-at-bottom {
+    margin-bottom: 100px;
+  }
+
+  .fotografos{
+    color:rgb(4, 64, 124) ;
+  }

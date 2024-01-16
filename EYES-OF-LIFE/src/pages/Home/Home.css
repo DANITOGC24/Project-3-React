@@ -21,8 +21,8 @@ body, html {
   border-radius: 15px;
   padding: 20px;
   background-color: #f9f0d3e5;
-  color: blue;
-  margin-top: -150px; 
+  color: rgb(4, 4, 162);
+  margin-top: -150px; /* Ajusta el margen superior según sea necesario */
 }
 
 
@@ -33,7 +33,7 @@ body, html {
 
 
 .welcome-container {
-  color: navy;
+  color:rgb(4, 4, 162);
   margin-bottom: 2rem;
 }
 
@@ -45,13 +45,10 @@ body, html {
 
 .galleries-container {
   background-color: #f9f0d3e5;
-  color: blue;
+  color: rgb(4, 4, 162);
 }
 
-
-
-
-
+/* Estilos de las columnas de imágenes */
 .column {
   display: flex;
   flex-wrap: wrap;
@@ -68,4 +65,7 @@ body, html {
   margin-bottom: 10px;
 }
 
+.line-under{
+  color:rgb(4, 4, 162);
+}
 

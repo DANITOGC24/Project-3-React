@@ -71,12 +71,11 @@ const ProfilePhotographer = () => {
       ) : (
         <>
         <div className="profile-container">
-         
+              <h1 className="profile-name">Hola Soy Juana</h1>
               <img src={A} alt="Mi Perfil" className="profile-image" /> 
               <button onClick={() => handleEditProfile('aboutMe')} className='buttonEdit'>Editar Perfil</button>
                
               <div className="personal-details">
-                <h1 className="profile-name">Hola Soy Juana</h1>
                 <p className="profile-description">Mi enfoque artístico se centra en la creación de imágenes 
                 que no solo sean visualmente impactantes, sino que también transmitan emociones y 
                 narrativas profundas. Cada fotografía que capturo es una exploración de la conexión humana, 

@@ -1,0 +1,23 @@
+.space-at-bottom {
+    margin-bottom: 100px;
+  }
+
+.header1 {
+ color: black;
+}
+
+.container{
+  margin-bottom: 50px;
+}
+
+.button-container{
+  margin-bottom: 50px;
+}
+
+.button-Back{
+  background-color: rgb(216, 183, 49);
+  font-size: 18px;
+  color: black;
+  padding: 15px;
+  text-align: center;
+  }

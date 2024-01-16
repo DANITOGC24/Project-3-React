@@ -7,6 +7,7 @@ import ButtonPhotographer from "../../../components/ButtonPhotographer/ButtonPho
 
 import { useState, useEffect } from 'react'
 import { getAllPhotographer } from '../../../services/photographer'
+import SearchAppBar from '../../../components/SearchBar/SearchBar';
 
 const ShowPhotographers = () => {
 
@@ -32,20 +33,26 @@ const ShowPhotographers = () => {
     fetchData();
   }, []);
   return (
+    <div>
+      <h1 className='fotografos'>Fotógrafos</h1>
+      <div className='searchBar'>
+            <SearchAppBar />
+      </div>
+
     <div className="cardContainer2">
       {Array.isArray(photographers) && photographers.length > 0 ? (
         photographers.map((photographer) => (
-          <Card key={photographer.id} sx={{ width: 300, marginTop: 10, marginLeft:5 }}>
+          <Card key={photographer.id} sx={{ width: 500, marginTop: 10, marginLeft:5, marginBottom:10 }}>
             <CardContent >
               <CardMedia
                 component="img"
-                height="auto"
+                height="500"
                 image={photographer.imagen}
                 alt=""
               />
               <div>
                 <h3>
-                  <strong>Name:</strong> {photographer.name_user}
+                  <strong>Fotografo:</strong> {photographer.name_user}
                 </h3>
                 <h4>
                   <strong>Email:</strong> {photographer.email}
@@ -58,6 +65,7 @@ const ShowPhotographers = () => {
       ) : (
         <p>No photographers available.</p>
       )}
+    </div>
     </div>
   );
   

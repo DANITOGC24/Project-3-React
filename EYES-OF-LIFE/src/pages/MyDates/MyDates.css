@@ -38,7 +38,13 @@ body {
   font-size: 18px;
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+.form-group-calendar .react-calendar {
+=======
 .form-group-calendar {
+>>>>>>> 06b814e323662f70656a38b3ad4970829b3fcfcf
+>>>>>>>>> Temporary merge branch 2
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,7 +77,16 @@ button:hover {
 
 .form-group {
   width: 100%;
+<<<<<<<<< Temporary merge branch 1
+  margin-top:-25px;
+=========
   margin-top: 25px;
+<<<<<<< HEAD
+  
+=======
+
+>>>>>>> 06b814e323662f70656a38b3ad4970829b3fcfcf
+>>>>>>>>> Temporary merge branch 2
 }
 
 .citas-reservadas {

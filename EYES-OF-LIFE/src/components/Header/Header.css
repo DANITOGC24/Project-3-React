@@ -2,26 +2,20 @@
 
 
 .app-bar-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Centra verticalmente los elementos */
-  padding: 10px;
   background: linear-gradient(180deg, #FAFFC5 0%, #FAFFC5 57%, #EDF7AC 30%, #F6FE9C 35%, #b6bec7 100%);
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.app-logo {
-  max-width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
-  height: auto;
-  margin-right: 100px; /* Añade un margen derecho para separar el logo de los demás elementos */
 }
 
 .button-container {
   display: flex;
   gap: 10px;
 }
-
+.app-logo{
+  display: flex;
+  margin-top: -90px;
+  margin-left: 350px;
+}
 .app-button {
   padding: 10px 15px;
   font-size: 14px;
@@ -38,4 +32,7 @@
   .button-container {
     margin-top: 10px;
   }
+}
+.app-bar-container h1{
+    color:rgb(4, 4, 162);
 }

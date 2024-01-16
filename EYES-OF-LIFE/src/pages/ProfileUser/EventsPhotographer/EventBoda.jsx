@@ -1,8 +1,7 @@
 import React from 'react';
-import './EventsImages.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const EventsImages = () => {
+const EventBoda = () => {
   const eventsData = [
     {
       name: 'Boda estándar',
@@ -29,10 +28,30 @@ const EventsImages = () => {
       },
     },
   ];
+  const navigate = useNavigate();
+
+  const handleGaleryClick = (photographer) => {
+    navigate(`/photographers/${photographer}/galery`);
+  };
+
+  const handleReservaClick = () => {
+
+  };
+
+  const handleEventClick = (photographer) => {
+    navigate(`/photographers/${photographer}/event`);
+  };
 
   return (
     <>
-   <h1 className='h1'>Packs de Boda</h1>
+    <h1 className='h1'>Packs de Boda</h1>
+      <div className="button-container">
+        <button className="button-PhotoGrapher" onClick={handleGaleryClick}>Galeria</button>
+        <button className="button-PhotoGrapher" onClick={handleReservaClick}>Reservar</button>
+        <button className="button-PhotoGrapher" onClick={handleEventClick}>Eventos</button>
+        <Link className="button-Back" to="#" onClick={() => window.history.back()}>Volver</Link>
+      </div>
+   
     <div className="events-container"> 
     
       {eventsData.map((event, index) => (
@@ -53,4 +72,4 @@ const EventsImages = () => {
   );
 };
 
-export default EventsImages;
+export default EventBoda;

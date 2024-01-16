@@ -30,7 +30,7 @@ const MyGalery = () => {
     };
     fetchPhotosGaleryPhotographer();
   }, []);
-
+ 
   return (
     <> 
     <h2>MyGalery</h2>
@@ -39,12 +39,13 @@ const MyGalery = () => {
         <label>
           <input type='text' onChange={(e)=> setTitle(e.target.value)} />
         </label>
-        <p>Description</p>
+        <p>Descripción</p>
         <label>
           <input type='text' onChange={(e)=> setDescription(e.target.value)} />
         </label>
       <UploadWidget dataImagen = {imagenData}/> 
       </div>
+      <p></p>
      <ListPhotosGalery photosGalery={photosGaleryPhotographer.message} /> 
     </>
   );

@@ -1,67 +1,76 @@
+import { useState, useEffect } from 'react';
+import { useParams, useNavigate, Link } from 'react-router-dom';
+import { getOnePhotographer } from '../../../services/photographer';
+import './ShowOnePhotoGrapher.css' 
+import CardMedia from '@mui/material/CardMedia';
 
-import { useState, useEffect } from 'react'
-import { getOnePhotographer} from '../../../services/photographer'
+
 
 const ShowOnePhotographer = () => {
-    const [user, setUser] = useState({});
-    const [loading, setLoading] = useState(true);
+  const { id } = useParams();
+  const [user, setUser] = useState({});
+  const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchData = async (id) => {
-          try {
-            const userData = await getOnePhotographer(id);
-            setUser(userData);
-            setLoading(false);
-          
-          } catch (error) {
-            console.error('Error fetching data:', error);
-            setLoading(false);
-          }
-        };
-    
-        fetchData();
-      }, []);
-
-      const handleEditClick = () => {
-        
-        alert('Editar fotógrafo');
-      };
-    
-      const handleSaveClick = () => {
-        
-        alert('Guardar fotógrafo');
-      };
-    
-      const handleDeleteClick = () => {
-        
-        alert('Eliminar fotógrafo');
-      };
-    
-      const handleBackClick = () => {
-       
-        alert('Volver');
-      };
-    
-      return (
-        <div>
-          <button onClick={handleEditClick}>Galeria</button>
-          <button onClick={handleSaveClick}>Reservar</button>
-          <button onClick={handleDeleteClick}>Event</button>
-          <button onClick={handleBackClick}>Volver</button>
-
-          <header>
-            <h1>Datos del Fotógrafo</h1>
-          </header>
-
-          <div className="container">
-            <h2>Información del Fotógrafo</h2>
-            <p><strong>Nombre:</strong> </p>
-            <p><strong>Email:</strong> </p>
-            <p><strong>Teléfono:</strong> </p>
-          </div>
-          
-        </div>
-      );
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const userData = await getOnePhotographer(id);
+        setUser(userData);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setLoading(false);
+      }
     };
+
+    fetchData();
+  }, [id]);
+  const navigate = useNavigate();
+
+  const handleGaleryClick = (photographer) => {
+    navigate(`/photographers/${photographer}/galery`);
+  };
+
+  const handleReservaClick = () => {
+
+  };
+
+  const handleEventClick = (photographer) => {
+    navigate(`/photographers/${photographer}/event`);
+  };
+
+
+  return (
+    <div>
+      <header >
+        <h1 className='header1'>Datos del Fotógrafo</h1>
+      </header> 
+      
+      <div className="button-container">
+        <button className="button-PhotoGrapher" onClick={handleGaleryClick}>Galeria</button>
+        <button className="button-PhotoGrapher" onClick={handleReservaClick}>Reservar</button>
+        <button className="button-PhotoGrapher" onClick={handleEventClick}>Eventos</button>
+        <Link className="button-Back" to="#" onClick={() => window.history.back()}>Volver</Link>
+      </div>
+
+      <CardMedia
+                component="img"
+                height="300"
+                image={user.imagen}
+                alt=""
+              />
+      <div className="container">
+        <h2>Información del Fotógrafo</h2>
+        <p><strong>Nombre:</strong> {user.name_user}</p>
+        <p><strong>Email:</strong> {user.email}</p>
+        <p><strong>Teléfono:</strong> {user.phone}</p>
+      </div>  
+
+     
+    
+    </div>
+      
+  )
+};
 
 export default ShowOnePhotographer;

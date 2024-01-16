@@ -17,6 +17,9 @@ import LayoutProfileUser from "../Layouts/LayoutProfileUser/LayoutProfileUser";
 import MyDatesUser from "../pages/ProfileUser/MyDatesUser/MyDatesUser";
 import ShowPhotographers from "../pages/ProfileUser/ShowPhotographers/ShowPhotographers";
 import ShowOnePhotographers from "../pages/ProfileUser/ShowPhotographers/ShowOnePhotographers";
+import GaleryPhotographer from "../pages/ProfileUser/GaleryPhotographer/GaleryPhotographer"
+import EventPhotographer from "../pages/ProfileUser/EventsPhotographer/EventPhotographer";
+import EventBoda from "../pages/ProfileUser/EventsPhotographer/EventBoda";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +83,10 @@ const router = createBrowserRouter([
         element: <EventsImages tipo="Boda" />, 
       },
       {
+        path: '/my-events/events-boda',
+        element: <EventBoda />, 
+      },
+      {
         path: '/events-cumpleaños',
         element: <EventsImages tipo="Cumpleaños" />, 
       },
@@ -129,6 +136,16 @@ const router = createBrowserRouter([
         {
           path: "/photographers/:id",
           element: <ShowOnePhotographers />,
+          
+        },
+        {
+          path: "/photographers/:id/galery",
+          element: <GaleryPhotographer />,
+          
+        },
+        {
+          path: "/photographers/:id/event",
+          element: <EventPhotographer />,
           
         }
        

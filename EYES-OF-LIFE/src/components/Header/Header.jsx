@@ -13,8 +13,8 @@ const AppBar = () => {
       <div className="app-bar-container">
         <Link to="/">
           <h1>EYES OF LIFE</h1>
-        </Link>
         <img src={logoImage} alt="Logo de Eyes of Life" className="app-logo" />
+        </Link>
         <div className="button-container">
           <Link to="/register">
             <button className="app-button">Registrate</button>

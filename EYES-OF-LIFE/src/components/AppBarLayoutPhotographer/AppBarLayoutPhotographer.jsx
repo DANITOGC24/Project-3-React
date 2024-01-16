@@ -10,9 +10,10 @@ const AppBar = () => {
     <header className="app-bar">
       <div className="app-bar-container">
         <Link to="/">
-          <h1>EYES OF LIFE</h1>
+          <h1>EYES OF LIFE</h1> 
+          <img src={logoImage} alt="Logo" className="app-logo" />
         </Link>
-        <img src={logoImage} alt="Logo" className="app-logo" />
+       
         <div className="button-container">
           <Link to="/profile-photographer">
             <button className="app-button">Perfil</button>

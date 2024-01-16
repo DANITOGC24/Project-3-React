@@ -4,6 +4,10 @@
   align-items: center;
   margin-top: 20px;
 }
+.profile-container h1 {
+  margin-left: -20px;
+  margin-top: 20px;
+}
 
 .right-section {
   max-width: 100%;
@@ -63,7 +67,7 @@
   word-spacing: 5px;
 }
 .profile-name{
-  margin-left: 500px;
+  margin-left:500px;
   font-size: 30px;
 
 
@@ -95,15 +99,16 @@
 }
 
 .buttonEdit {
-  margin-left: 620px;
+  margin-left: 800px;
+  width: auto;
   background-color: transparent;
   border: 2px solid #ffffff; 
   color: #0e449c; 
-  padding: 10px 20px; 
-  font-size: 16px; 
+  font-size: 16px;   /* Ajusta el tamaño de la fuente según tus preferencias */
   cursor: pointer;
   transition: background-color 0.3s ease; 
 }
+
 
 .buttonEdit:hover {
   background-color: rgba(255, 255, 255, 0.3); 

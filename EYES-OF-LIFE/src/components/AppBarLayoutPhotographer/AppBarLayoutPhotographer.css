@@ -11,12 +11,11 @@
   padding: 10px;
 }
 
-.app-logo {
-  max-width: 100px;
-  height: auto;
-  margin-right: 10px; /* Ajusta el margen derecho según sea necesario */
+.app-logo{
+  display: flex;
+  margin-top: -90px;
+  margin-left: 350px;
 }
-
 .button-container {
   display: flex;
   gap: 10px;

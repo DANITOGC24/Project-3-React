@@ -4,7 +4,7 @@
   margin: auto;
   margin-top: 60px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f4e3ca; 
+ 
 
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@ input {
 }
 
 button {
-  background-color: #e65c00;
+  background-color: #f3c635;
   color: white;
   padding: 10px;
   border: none;
@@ -60,13 +60,13 @@ button {
 }
 
 button:hover {
-  background-color: #cc5200;
+  background-color: #f3c635;
 }
 
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: #b35900;
+  color:#f3c635;
 }
 
 #edit-button{

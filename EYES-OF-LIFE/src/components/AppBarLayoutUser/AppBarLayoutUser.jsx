@@ -11,8 +11,9 @@ const AppBarUser = () => {
       <div className="app-bar-container">
         <Link to="/">
           <h1>EYES OF LIFE</h1>
+          <img src={logoImage} alt="Logo" className="app-logo" />
         </Link>
-        <img src={logoImage} alt="Logo" className="app-logo" />
+        
         <div className="button-container">
           <Link to="/photographers">
             <button className="app-button">Fotografos</button>
