@@ -45,7 +45,7 @@ const MyDates = () => {
     localStorage.setItem('appointments', JSON.stringify(appointments));
   };
 
-/*Esta funcion puede crear un boton que resetee todo*/
+
   const resetForm = () => {
     setFormName('');
     setSelectedTime('');

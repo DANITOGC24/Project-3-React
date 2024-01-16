@@ -9,7 +9,7 @@ const ProfilePhotographer = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [editMode, setEditMode] = useState(false);
-  const [editedAboutMe, setEditedAboutMe] = useState(''); // Cambiado de editedData a editedAboutMe
+  const [editedAboutMe, setEditedAboutMe] = useState(''); 
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -30,13 +30,13 @@ const ProfilePhotographer = () => {
 
   const handleEditProfile = (section) => {
     setEditMode(!editMode);
-    // Puedes inicializar los datos editados aquí según la sección
+   
     setEditedAboutMe(userData.user.infoPhotoGrapher.aboutMe || '');
   };
 
   const handleSaveProfile = async () => {
     try {
-      // Actualiza el estado local con la información editada
+      
       setUserData((prevUserData) => ({
         ...prevUserData,
         user: {
@@ -48,10 +48,10 @@ const ProfilePhotographer = () => {
         },
       }));
 
-      // Llama a la función para actualizar la información en la base de datos
+     
       await updateProfilePhotographer({ aboutMe: editedAboutMe });
       
-      // Finaliza el modo de edición
+      
       setEditMode(false);
 
       console.log("Datos del usuario actualizados con éxito");

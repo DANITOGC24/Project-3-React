@@ -6,15 +6,15 @@
 
 
 .title p {
-  margin-right: 10px; /* Ajusta el margen entre las etiquetas y los campos de entrada */
+  margin-right: 10px; 
 }
 
 
 .title label {
-  margin-bottom: 10px; /* Ajusta el espacio entre las etiquetas y los campos de entrada */
+  margin-bottom: 10px; 
 }
 
 .title input {
-  margin-right: 10px; /* Ajusta el espacio entre los campos de entrada */
+  margin-right: 10px; 
 }
 

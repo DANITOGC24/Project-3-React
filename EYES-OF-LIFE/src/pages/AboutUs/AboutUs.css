@@ -1,11 +1,11 @@
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #ffeb3b; /* Fondo amarillo */
+  background-color: #ffeb3b; 
 }
 
 .about-container {
-  max-width: 100%; /* Cambiado a 100% para ocupar todo el ancho */
+  max-width: 100%; 
   margin: 0 auto;
   padding: 40px;
   border-radius: 15px;
@@ -16,8 +16,8 @@ body {
 .about-header {
   text-align: center;
   margin-bottom: 30px;
-  width: 75%; /* Cambiado a 75% de ancho */
-  margin: 0 auto; /* Centrar el contenido */
+  width: 75%; 
+  margin: 0 auto; 
 }
 
 .about-header h1 {
@@ -35,14 +35,14 @@ body {
 .team-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centrar el contenido */
+  justify-content: center; 
   margin-top: 30px;
 }
 
 .team-member {
-  width: calc(20% - 20px); /* Cambiado a 25% de ancho */
+  width: calc(20% - 20px); 
   margin-bottom: 30px;
-  margin-right: 2px; /* Agregado 2px de separación */
+  margin-right: 2px; 
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -52,7 +52,7 @@ body {
 }
 
 .team-member:last-child {
-  margin-right: 0; /* Elimina el margen derecho del último elemento */
+  margin-right: 0; 
 }
 
 .team-member:hover {
@@ -61,7 +61,7 @@ body {
 
 .team-member img {
   width: 90%;
-  height: 40%; /* Aumentado un 10% la altura */
+  height: 40%; 
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -76,13 +76,13 @@ body {
 
 .member-info h2 {
   color: #333;
-  font-size: 1.5em; /* Ajusté el tamaño del título */
+  font-size: 1.5em; 
   margin-bottom: 10px;
 }
 
 .member-info p {
   color: #666;
-  font-size: 1em; /* Ajusté el tamaño del texto */
+  font-size: 1em;
   margin-bottom: 10px;
   line-height: 1.4;
 }

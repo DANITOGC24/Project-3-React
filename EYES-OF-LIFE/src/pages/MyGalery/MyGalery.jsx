@@ -22,7 +22,7 @@ const MyGalery = () => {
     const fetchPhotosGaleryPhotographer = async () => {
       try {
         const result = await getPhotosGaleryPhotographer();
-        //const limitedPhotos = result.slice(0, 50);
+       
         setPhotosGaleryPhotographer(result);
       } catch (error) {
         console.error(error.message);
@@ -30,9 +30,7 @@ const MyGalery = () => {
     };
     fetchPhotosGaleryPhotographer();
   }, []);
-  //console.log(photosGaleryPhotographer);
-  // console.log(title)
-  // console.log(description)
+
   return (
     <> 
     <h2>MyGalery</h2>

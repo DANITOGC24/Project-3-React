@@ -1,12 +1,10 @@
-
-
 .user-card {
   width: 50%;
   height: 70%;
   margin: auto;
   margin-top: 60px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f4e3ca; /* Color de fondo */
+  background-color: #f4e3ca; 
 
   display: flex;
   justify-content: center;

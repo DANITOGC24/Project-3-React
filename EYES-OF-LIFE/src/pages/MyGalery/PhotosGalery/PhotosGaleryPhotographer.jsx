@@ -13,9 +13,9 @@ export default function PhotosGaleryPhotographer({ galeryPhotos }) {
     console.log(galeryPhotos)
     const fetchGalery = async () => {
       try {
-        // Suponiendo que galeryPhotos es un objeto con title, description y url
+        
         const { title_image, description, url } = galeryPhotos;
-        // Puedes establecer los valores directamente en el estado local
+      
         setTitle(title_image);
         setDescription(description);
         setUrl(url);
@@ -26,7 +26,7 @@ export default function PhotosGaleryPhotographer({ galeryPhotos }) {
     fetchGalery();
   }, [galeryPhotos]);  
 
-  // Declara title, description y url como estados locales
+  
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [url, setUrl] = useState('');

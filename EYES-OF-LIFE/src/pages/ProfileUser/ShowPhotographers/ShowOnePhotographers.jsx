@@ -23,22 +23,22 @@ const ShowOnePhotographer = () => {
       }, []);
 
       const handleEditClick = () => {
-        // Lógica para la edición (puedes implementar según tus necesidades).
+        
         alert('Editar fotógrafo');
       };
     
       const handleSaveClick = () => {
-        // Lógica para guardar (puedes implementar según tus necesidades).
+        
         alert('Guardar fotógrafo');
       };
     
       const handleDeleteClick = () => {
-        // Lógica para eliminar (puedes implementar según tus necesidades).
+        
         alert('Eliminar fotógrafo');
       };
     
       const handleBackClick = () => {
-        // Lógica para volver (puedes implementar según tus necesidades).
+       
         alert('Volver');
       };
     

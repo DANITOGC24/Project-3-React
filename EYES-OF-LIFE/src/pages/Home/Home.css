@@ -1,49 +1,48 @@
-/* Estilo general */
 body, html {
   height: 100%;
   margin: 0;
 }
 
-/* Contenedor principal */
+
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh; /* Ocupa el 100% del alto de la ventana */
-  max-width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+  height: 50vh; 
+  max-width: 100vw; 
   padding: 410px;
   text-align: center;
   background-color: #f9f0d3e5;
 }
 
-/* Estilos del contenedor "Eyes of Life" */
+
 .eyes-of-life-container {
   border-radius: 15px;
   padding: 20px;
   background-color: #f9f0d3e5;
   color: blue;
-  margin-top: -150px; /* Ajusta el margen superior según sea necesario */
+  margin-top: -150px; 
 }
 
-/* Estilo del logo de Eyes of Life */
+
 .eyes-of-life-logo {
   max-width: 100%;
-  margin-top: -120px; /* Ajusta el margen superior según sea necesario */
+  margin-top: -120px; 
 }
 
-/* Estilos del contenedor de bienvenida */
+
 .welcome-container {
   color: navy;
   margin-bottom: 2rem;
 }
 
-/* Estilos del texto de bienvenida */
+
 .welcome-container h3, .welcome-container h1 {
   margin-bottom: 0.5rem;
 }
 
-/* Estilos del contenedor de galerías */
+
 .galleries-container {
   background-color: #f9f0d3e5;
   color: blue;
@@ -52,7 +51,7 @@ body, html {
 
 
 
-/* Estilos de las columnas de imágenes */
+
 .column {
   display: flex;
   flex-wrap: wrap;
@@ -60,9 +59,9 @@ body, html {
   justify-content: space-between;
 }
 
-/* Estilos de las imágenes en las columnas */
+
 .column img {
-  width: calc(33.333% - 10px); /* Para que haya 3 imágenes por fila */
+  width: calc(33.333% - 10px); 
   height: 270px;
   object-fit: cover;
   border-radius: 8px;
