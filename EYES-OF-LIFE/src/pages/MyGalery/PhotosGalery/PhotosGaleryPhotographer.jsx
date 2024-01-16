@@ -50,4 +50,4 @@ export default function PhotosGaleryPhotographer({ galeryPhotos }) {
       </CardActions>
     </Card>
   );
-};
+}

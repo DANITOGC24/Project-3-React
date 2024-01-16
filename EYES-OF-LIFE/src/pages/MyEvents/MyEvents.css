@@ -50,3 +50,10 @@
     transform: translateY(0);
   }
   
+  .galeria-eventos{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: rgb(4, 30, 146);
+
+  }

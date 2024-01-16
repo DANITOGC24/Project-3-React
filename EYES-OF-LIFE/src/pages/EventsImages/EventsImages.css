@@ -1,26 +1,10 @@
-html, body, #root {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  overflow: auto;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+/* EventsImages.css */
 
 .events-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
 }
-
-.h1{
-  color: rgb(4, 64, 124);
-}
-
 
 .evento {
   font-size: 1.5em;
@@ -29,9 +13,9 @@ html, body, #root {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 400px;
-  height: 300px;
-  margin: 50px;
+  width: 30%; /* Establece un ancho fijo para mostrar tres eventos por fila */
+  height: 400px; /* Ajusta según sea necesario para mantener proporciones */
+  margin: 10px; /* Ajusta según sea necesario */
   padding: 20px;
   background-color: #ffffff;
   border-radius: 15px;
@@ -41,18 +25,8 @@ html, body, #root {
   text-decoration: none;
 }
 
-
-.evento:hover {
-  background-color: #e0e0e0;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2);
-}
-
-
-.evento-card ul {
-  padding: 0;
-  list-style: none;
-}
-
-.evento-card ul li div {
-  margin-bottom: 20px;
+@media (max-width: 768px) {
+  .evento {
+    width: 100%; /* Cambia a ancho completo en pantallas más pequeñas */
+  }
 }
