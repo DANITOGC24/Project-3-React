@@ -11,7 +11,6 @@ import Pgbebes from '../../assets/images/Pgbebes.webp';
 
 const MyEvents = () => {
   return (
-    <><p className='galeria-eventos'>EVENTOS</p>
     <div className="evento-container">
       <Link
         to={{
@@ -90,7 +89,7 @@ const MyEvents = () => {
       >
         <EventImage image={Pgbebes} title="Bebés" />
       </Link>
-    </div></>
+    </div>
   );
 };
 

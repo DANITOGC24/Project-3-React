@@ -1,4 +1,3 @@
-// EventsImages.jsx
 import React from 'react';
 import './EventsImages.css';
 import { Link } from 'react-router-dom';
@@ -33,27 +32,23 @@ const EventsImages = () => {
 
   return (
     <>
-      
-      <h1 className='h1'>Packs de Boda</h1>
-      <div className="events-container"> 
-        {eventsData.map((event, index) => (
-          <Link to={`/my-dates?event=${event.name}`} state={event} key={index} className="evento">
-            <div className="evento-card">
-              <h2>{event.name}</h2>
-              <div className="evento-imagen">
-                {/* Agrega la URL correcta de tu imagen */}
-                <img src="tu-url-de-la-imagen" alt="Descripción de la imagen" />
-              </div>
-              <ul>
-                <li>
-                  <div>Precio: {event.prices.price}€</div>
-                  <div>Descripción: {event.prices.description}</div>
-                </li>
-              </ul>
-            </div>
-          </Link>
-        ))}
-      </div>
+   <h1 className='h1'>Packs de Boda</h1>
+    <div className="events-container"> 
+    
+      {eventsData.map((event, index) => (
+        <Link to={`/my-dates?event=${event.name}`} state={event} key={index} className="evento">
+          <div className="evento-card">
+            <h2>{event.name}</h2>
+            <ul>
+              <li>
+                <div>Precio: {event.prices.price}€</div>
+                <div>Descripción: {event.prices.description}</div>
+              </li>
+            </ul>
+          </div>
+        </Link>
+      ))}
+    </div>
     </>
   );
 };
