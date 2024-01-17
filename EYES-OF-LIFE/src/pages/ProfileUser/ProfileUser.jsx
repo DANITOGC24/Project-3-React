@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
-import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { useState, useEffect } from 'react'
-import { getProfile } from '../../services/userService'
-import React from 'react'
-import './ProfileUser.css'
+import { getProfile } from '../../services/userService';
+import './ProfileUser.css';
+import { updateUser } from '../../services/userService';
+import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
+
+import './ProfileUser.css';
+
+// Otros imports...
 
 const ProfileUser = () => {
   const [user, setUser] = useState({});
