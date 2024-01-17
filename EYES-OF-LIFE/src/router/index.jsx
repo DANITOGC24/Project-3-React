@@ -16,6 +16,7 @@ import PhotosGaleryPhotographer from "../pages/MyGalery/PhotosGalery/PhotosGaler
 import LayoutProfileUser from "../Layouts/LayoutProfileUser/LayoutProfileUser";
 import MyDatesUser from "../pages/ProfileUser/MyDatesUser/MyDatesUser";
 import ShowPhotographers from "../pages/ProfileUser/ShowPhotographers/ShowPhotographers";
+import CustomMessages from "../pages/ProfileUser/MyMessagesUser/MessagesUser";
 import ShowOnePhotographers from "../pages/ProfileUser/ShowPhotographers/ShowOnePhotographers";
 import GaleryPhotographer from "../pages/ProfileUser/GaleryPhotographer/GaleryPhotographer"
 import EventPhotographer from "../pages/ProfileUser/EventsPhotographer/EventPhotographer";
@@ -120,6 +121,10 @@ const router = createBrowserRouter([
       path: "/",
       element: <LayoutProfileUser />,
       children: [
+         {
+           path: "/my-messages-user",
+          element: <CustomMessages />, 
+         },
         {
           path: "/profile-user",
           element: <ProfileUser />,

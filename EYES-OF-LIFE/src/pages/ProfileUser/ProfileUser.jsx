@@ -2,8 +2,11 @@ import React, { useState, useEffect } from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import { getProfile, updateUser } from '../../services/userService';
-import './ProfileUser.css';
+import { useState, useEffect } from 'react'
+import { getProfile } from '../../services/userService'
+import React from 'react'
+import './ProfileUser.css'
+
 
 const ProfileUser = () => {
   const [user, setUser] = useState({});

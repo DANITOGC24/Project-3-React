@@ -2,27 +2,28 @@ import React, { useState } from 'react';
 
 const Chat = ({ emisor, mensajes, onSendMessage }) => {
   const [mensaje, setMensaje] = useState('');
-  const [chatMensajes, setChatMensajes] = useState(mensajes);
+  const [chatMensajes, setChatMensajes] = useState(mensajes || []);
 
   const handleSendMessage = () => {
     if (mensaje.trim() !== '') {
+
       const nuevoMensaje = {
         emisor: 'Tú',
         texto: mensaje,
       };
       onSendMessage(emisor, mensaje);
-      setChatMensajes((prevMensajes) => [...prevMensajes, nuevoMensaje]);
-      setMensaje('');
+      setChatMensajes([...chatMensajes, nuevoMensaje]);
+      
     }
   };
-
+  console.log(chatMensajes)
   return (
     <div className="Chat-container">
       <div className="Chat-header">
         <h2>{emisor}</h2>
       </div>
       <div className="Chat-messages">
-        {chatMensajes.map((mensaje, index) => (
+        {chatMensajes && chatMensajes.map((mensaje, index) => (
           <div key={index} className={mensaje.emisor === 'Tú' ? 'Chat-message mine' : 'Chat-message'}>
             <strong>{mensaje.emisor}</strong>: {mensaje.texto}
           </div>

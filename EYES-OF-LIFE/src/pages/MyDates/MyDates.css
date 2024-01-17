@@ -1,128 +1,80 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  font-family: Arial, sans-serif;
-  background-color: #fffedbc1;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
 .my-dates-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 150%;
-  margin: 50px auto;
-  padding: 15px;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px; 
+  margin: 0 auto;
 }
 
 .appointment-form {
-  display:contents;
-  width: 100%;
-  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 400px;
+  margin-top: 20px;
 }
 
-
-
-
-
-
-.appointment-form input,
-.appointment-form select {
-  margin-bottom: 10px;
-  padding: 15px;
-  border: 3px solid #ccc;
-  border-radius: 15px;
-  font-size: 18px;
-}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 .form-group-calendar .react-calendar {
-=======
-.form-group-calendar {
->>>>>>> 06b814e323662f70656a38b3ad4970829b3fcfcf
->>>>>>>>> Temporary merge branch 2
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 30px;
   margin-top: 5%;
   width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
 }
 
-
-input,
-select,
-button {
+.appointment-table th,
+.appointment-table td {
   padding: 15px;
   border: 1px solid #ccc;
-  border-radius: 30px;
+  text-align: left;
 }
 
-button {
-  background-color: #FFFEDB;
-  color: #0E3863;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
+.appointment-table th {
   background-color: #fbd081;
 }
 
-.form-group {
-  width: 100%;
-<<<<<<<<< Temporary merge branch 1
-  margin-top:-25px;
-=========
-  margin-top: 25px;
-<<<<<<< HEAD
-  
-=======
+.appointment-table button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #FFFEDB;
+  color: #0E3863;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
 
->>>>>>> 06b814e323662f70656a38b3ad4970829b3fcfcf
->>>>>>>>> Temporary merge branch 2
+.appointment-table button:hover {
+  background-color: #fbd081;
+}
+
+.form-group-calendar {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.react-calendar {
+  font-size: 16px;
+  width: 100%;
+  margin-top: 25px;
+  
 }
 
 .citas-reservadas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
-  margin: 50px auto;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .citas-reservadas h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.appointment-table {
   width: 100%;
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.appointment {
-  width: calc(35.33% - 20px);
-  margin: 20px 10px;
-  text-align: center;
-}
-
-.cita-reservada h3 {
-  margin: 0;
-  font-size: 25px;
-}
-
-.cita-reservada p {
-  font-size: 18px;
-}
-
-.appointment strong {
-  font-size: 20px;
-}
-
-.appointment div {
-  font-size: 18px;
+  border-collapse: collapse;
+  margin-top: 10px;
 }

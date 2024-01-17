@@ -15,6 +15,9 @@ const AppBarUser = () => {
         </Link>
         
         <div className="button-container">
+          { <Link to="/my-messages-user">
+            <button className="app-button">Mis Mensajes</button>
+          </Link> }
           <Link to="/photographers">
             <button className="app-button">Fotografos</button>
           </Link>

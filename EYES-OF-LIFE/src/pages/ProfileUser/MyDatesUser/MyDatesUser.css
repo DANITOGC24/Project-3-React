@@ -1,89 +1,37 @@
+
 .my-dates-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: transparent; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 75vh; 
 }
 
-.my-dates-container h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
+table {
+  border-collapse: collapse;
+  width: 30%; 
+  margin-bottom: 5px;
+  margin-right: 35%;
 }
 
-.my-dates-container .form-group {
-  margin-bottom: 20px;
+th, td {
+  border: 2px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
 }
-
-.my-dates-container label {
-  display: block;
-  font-size: 18px;
-  margin-bottom: 10px;
+th {
+  background-color: #f2f2f2;
 }
-
-.my-dates-container input[type="text"] {
-  width: 100%;
-  padding: 12px;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-sizing: border-box;
-}
-
-.my-dates-container .custom-button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  font-size: 20px;
+button {
+  padding: 10px;
+  margin: 5px;
   cursor: pointer;
-  border-radius: 6px;
+  font-size: 25px;
 }
 
-.my-dates-container .appointment button {
-  background-color: #e74c3c;
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  font-size: 10px;
-  cursor: pointer;
-  border-radius: 6px;
-  margin-top: 8px;
-}
-
-.my-dates-container .button-wrapper {
-  margin-top: 20px;
-}
-
-.my-dates-container .divider {
-  height: 2px;
-  background-color: #ccc;
-  margin: 20px 0;
-}
-
-.my-dates-container .citas-reservadas {
-  margin-top: 20px;
-}
-
-.my-dates-container .appointment {
-  padding: 12px;
-  margin-bottom: 15px;
-}
-
-.my-dates-container .appointment strong {
-  font-weight: bold;
-}
-
-.my-dates-container .appointment button {
-  background-color: #e74c3c;
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 6px;
-  margin-top: 8px;
-}
-
-.my-dates-container .appointment button:hover {
-  background-color: #c0392b;
+button:hover {
+  background-color: #ddd;
 }
